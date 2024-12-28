@@ -41,7 +41,7 @@ export default function MenuListPage() {
         <div className="bg-blue-600 p-2 rounded-sm">
           <h1 className="font-bold text-white">ข้อมูลพื้นฐาน</h1>
         </div>
-        <div className="grid grid-cols-1 divide-y gap-2 pt-1">
+        <div className="grid grid-cols-1 divide-y gap-2 pt-2">
           {menuItems.map((item, index) => (
             <MenuItem
               key={index}
