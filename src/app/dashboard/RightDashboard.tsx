@@ -7,7 +7,7 @@ const RightDashboardPage = () => {
       <div className="w-[250px] max-w-sm h-4/12 w-120 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="/dashboard/add-employee">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            เพิ่มข้อมูลบุคลากร
+            ข้อมูลบุคลากร
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -43,13 +43,13 @@ const RightDashboardPage = () => {
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          เพิ่มข่าวประชาสัมพันธ์
+          ข่าวประชาสัมพันธ์
         </p>
         <a
           href="/dashboard/add-newslist"
           className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-          เพิ่มข้อข่าว
+          เพิ่มข่าวประชาสัมพันธ์
           <svg
             className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
             aria-hidden="true"
@@ -75,13 +75,13 @@ const RightDashboardPage = () => {
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          เพิ่มข่าวประกวดราคา/จัดซื้อจัดจ้าง
+          ข่าวประกวดราคา/จัดซื้อจัดจ้าง
         </p>
         <a
           href="/dashboard/add-newssell"
           className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-          เพิ่มข้อข่าว
+          เพิ่มข่าวประกวดราคา
           <svg
             className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
             aria-hidden="true"
@@ -107,13 +107,13 @@ const RightDashboardPage = () => {
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          เพิ่มข้อมูลนักเรียน
+          ข้อมูลนักเรียน
         </p>
         <a
           href="/dashboard/add-student"
           className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-          เพิ่มข้อมูล
+          เพิ่มข้อมูลนักเรียน
           <svg
             className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
             aria-hidden="true"
@@ -140,13 +140,13 @@ const RightDashboardPage = () => {
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-           ข้อมูลนักเรียน
+           แก้ไขข้อมูลนักเรียน
         </p>
         <a
           href="/dashboard/show-students"
           className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-          แก้ไขข้อมูล
+          แก้ไขข้อมูลนักเรียน
           <svg
             className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
             aria-hidden="true"
@@ -178,7 +178,7 @@ const RightDashboardPage = () => {
           href="/dashboard/add-gallery"
           className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-          เพิ่มข้อมูล
+          เพิ่มภาพกิจกรรม
           <svg
             className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
             aria-hidden="true"
@@ -210,7 +210,7 @@ const RightDashboardPage = () => {
           href="/dashboard/update-gallery"
           className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-          แก้ไขข้อมูล
+          แก้ไขภาพกิจกรรม
           <svg
             className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
             aria-hidden="true"
@@ -229,6 +229,38 @@ const RightDashboardPage = () => {
         </a>
       </div>
 
+            <div className="w-[250px] max-w-sm h-4/12 w-120 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="/dashboard/add-gallery">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          ประวัติโรงเรียน
+          </h5>
+        </a>
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          ข้อมูลประวัติโรงเรียน
+        </p>
+        <a
+          href="/dashboard/add-gallery"
+          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          เพิ่มประวัติโรงเรียน
+          <svg
+            className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"
+            />
+          </svg>
+        </a>
+      </div>
+      
     </div>
   );
 };
