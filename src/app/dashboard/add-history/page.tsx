@@ -40,7 +40,7 @@ export default function ContactForm() {
 
   return (
     <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-6 text-center">Contact Us</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">ประวัติโรงเรียน</h1>
       <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
         <div className="mb-4">
           <input
