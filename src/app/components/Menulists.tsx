@@ -23,8 +23,6 @@ const MenuItem = ({ title, href, imgSrc, imgAlt }: MenuItemProps) => (
       <Image
         src={imgSrc}
         alt={imgAlt}
-        width={100}
-        height={100}
         className="max-w-xs transition duration-300 ease-in-out hover:scale-110 py-1.5"
       />
     </div>
