@@ -12,7 +12,7 @@ export default function ContactForm() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    setFormData({ ...formData, [e.target.title]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -63,7 +63,6 @@ export default function ContactForm() {
             className="w-full p-2 border rounded"
           />
         </div>
-        
         <button
           type="submit"
           className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
@@ -71,7 +70,11 @@ export default function ContactForm() {
           Send
         </button>
       </form>
-      {status && <p>{status}</p>}
+      {status && (
+        <p className={`mt-4 text-center ${status.includes("successfully") ? "text-green-500" : "text-red-500"}`}>
+          {status}
+        </p>
+      )}
     </div>
   );
 }
