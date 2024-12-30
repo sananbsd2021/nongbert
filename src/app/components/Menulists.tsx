@@ -1,30 +1,56 @@
 import Link from "next/link";
-import Image from "next/image";
+import { AiFillCaretRight } from "react-icons/ai";
 
 interface MenuItemProps {
   title: string;
   href: string;
-  imgSrc: string;
+  // imgSrc: string;
   imgAlt: string;
 }
 
 const menuItems: MenuItemProps[] = [
-  { title: "ข้อมูลพื้นฐานโรงเรียน", href: "/info", imgSrc: "/images/0.gif", imgAlt: "School Information" },
-  { title: "ประวัติหน่วยงาน", href: "/history", imgSrc: "/images/0.gif", imgAlt: "Organization History" },
-  { title: "วิสัยทัศน์ / ปรัชญา", href: "/vision", imgSrc: "/images/0.gif", imgAlt: "Vision and Philosophy" },
-  { title: "คณะกรรมการสถานศึกษา", href: "/kk_sch", imgSrc: "/images/0.gif", imgAlt: "School Board" },
-  { title: "e-service", href: "/eservice", imgSrc: "/images/0.gif", imgAlt: "e-Service" },
-  { title: "ผู้ดูแลระบบ", href: "/dashboard", imgSrc: "/images/0.gif", imgAlt: "Admin Dashboard" },
+  {
+    title: "ข้อมูลพื้นฐานโรงเรียน",
+    href: "/info",
+    // imgSrc: "/images/0.gif",
+    imgAlt: "School Information",
+  },
+  {
+    title: "ประวัติหน่วยงาน",
+    href: "/history",
+    // imgSrc: "/images/0.gif",
+    imgAlt: "Organization History",
+  },
+  {
+    title: "วิสัยทัศน์ / ปรัชญา",
+    href: "/vision",
+    // imgSrc: "/images/0.gif",
+    imgAlt: "Vision and Philosophy",
+  },
+  {
+    title: "คณะกรรมการสถานศึกษา",
+    href: "/kk_sch",
+    // imgSrc: "/images/0.gif",
+    imgAlt: "School Board",
+  },
+  {
+    title: "e-service",
+    href: "/eservice",
+    // imgSrc: "/images/0.gif",
+    imgAlt: "e-Service",
+  },
+  {
+    title: "ผู้ดูแลระบบ",
+    href: "/dashboard",
+    // imgSrc: "/images/0.gif",
+    imgAlt: "Admin Dashboard",
+  },
 ];
 
-const MenuItem = ({ title, href, imgSrc, imgAlt }: MenuItemProps) => (
+const MenuItem = ({ title, href }: MenuItemProps) => (
   <div className="flex items-center py-2">
     <div>
-      <Image
-        src={imgSrc}
-        alt={imgAlt}
-        className="max-w-xs transition duration-300 ease-in-out hover:scale-110 py-1.5"
-      />
+      <AiFillCaretRight className="text-blue-500" />
     </div>
     <div>
       <Link href={href} className="mx-2 p-1 text-blue-500 hover:underline">
@@ -47,7 +73,7 @@ export default function MenuListPage() {
               key={index}
               title={item.title}
               href={item.href}
-              imgSrc={item.imgSrc}
+              // imgSrc={item.imgSrc}
               imgAlt={item.imgAlt}
             />
           ))}
