@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-
 interface MenuItemProps {
   title: string;
   href: string;
